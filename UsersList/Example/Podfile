@@ -1,0 +1,6 @@
+use_frameworks!
+target 'UsersList_Tests' do
+  pod 'UsersList', :path => '../'
+  
+  
+end

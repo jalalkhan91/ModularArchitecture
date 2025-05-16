@@ -1,0 +1,6 @@
+framework module UsersList {
+  umbrella header "UsersList-umbrella.h"
+
+  export *
+  module * { export * }
+}

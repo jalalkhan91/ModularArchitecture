@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-ModularArchitecture-ModularArchitectureUITests/Pods-ModularArchitecture-ModularArchitectureUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/NetworkModule/NetworkModule.framework
+${BUILT_PRODUCTS_DIR}/UsersList/UsersList.framework

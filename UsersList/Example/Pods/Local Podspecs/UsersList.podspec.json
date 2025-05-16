@@ -1,0 +1,22 @@
+{
+  "name": "UsersList",
+  "version": "0.1.0",
+  "summary": "A short description of UsersList.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/jalalkhan91/UsersList",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "jalalkhan91": "jalal.khan.91@hotmail.com"
+  },
+  "source": {
+    "git": "https://github.com/jalalkhan91/UsersList.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "UsersList/Classes/**/*"
+}

@@ -1,0 +1,22 @@
+PODS:
+  - NetworkModule (0.1.0)
+  - UsersList (0.1.0):
+    - NetworkModule
+
+DEPENDENCIES:
+  - NetworkModule (from `./NetworkModule`)
+  - UsersList (from `./UsersList`)
+
+EXTERNAL SOURCES:
+  NetworkModule:
+    :path: "./NetworkModule"
+  UsersList:
+    :path: "./UsersList"
+
+SPEC CHECKSUMS:
+  NetworkModule: b153fc01f2f390ecb9956456fe370f620e6b47cc
+  UsersList: 6d450489219f7f298af90c2349a6ffb59e298e6b
+
+PODFILE CHECKSUM: d7f1b20883c636f614f6589e6c6d5d6bb0d98836
+
+COCOAPODS: 1.15.2
