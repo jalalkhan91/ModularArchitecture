@@ -8,14 +8,14 @@
 import Foundation
 import NetworkModule
 
-public protocol UsersListInteractor: AnyObject {
+public protocol UsersListInteractor {
     var state: UsersListState { get }
     
-    func viewOnAppear()
-    
+    func onViewAppear()
 }
 
-public final class UsersListInteractorLive: UsersListInteractor {
+
+public class UsersListInteractorLive: UsersListInteractor {
     public var state: UsersListState
     private let networkModule: NetworkModule
     
@@ -24,28 +24,27 @@ public final class UsersListInteractorLive: UsersListInteractor {
         self.networkModule = networkModule
     }
     
-    public func viewOnAppear() {
+    public func onViewAppear() {
         Task {
-            await fetchUsers()
+            await getUsers()
         }
     }
     
     @MainActor
-    private func fetchUsers() async {
+    private func getUsers() async {
         state.isLoading = true
         state.error = nil
         
         do {
-            let users: [User] = try await networkModule.get(
+            let users = try await networkModule.get(
                 endpoint: "/users",
                 responseType: [User].self
             )
-            
+            state.isLoading = false
             state.users = users
-            state.isLoading = false
         } catch {
-            state.error = error.localizedDescription
             state.isLoading = false
+            state.error = error.localizedDescription
         }
     }
 }

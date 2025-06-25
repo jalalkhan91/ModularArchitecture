@@ -34,7 +34,7 @@ public struct UsersListView: View {
                             .multilineTextAlignment(.center)
                             .padding()
                         Button("Retry") {
-                            interactor?.viewOnAppear()
+                            interactor?.onViewAppear()
                         }
                         .buttonStyle(.bordered)
                     }
@@ -75,14 +75,14 @@ public struct UsersListView: View {
                     }
                     .listStyle(.plain)
                     .refreshable {
-                        interactor?.viewOnAppear()
+                        interactor?.onViewAppear()
                     }
                 }
             }
             .navigationTitle("Users")
         }
         .onAppear {
-            interactor?.viewOnAppear()
+            interactor?.onViewAppear()
         }
     }
 }
