@@ -6,11 +6,12 @@
 //
 
 import Foundation
+import Combine
 
 public class NetworkModule {
     private let networkService: NetworkService
     
-    init(session: URLSession = .shared) {
+    public init(session: URLSession = .shared) {
         self.networkService = DefaultNetworkService(session: session)
     }
     
@@ -43,6 +44,43 @@ public class NetworkModule {
         return try await networkService.request(
             endpoint: endpoint,
             method: .get,
+            headers: headers,
+            body: jsonData,
+            queryParams: nil,
+            responseType: responseType
+        )
+    }
+    
+    public func getPublisher<T: Decodable>(
+        endpoint: String,
+        headers: [String: String]? = nil ,
+        queryParams: [String: String]? = nil,
+        responseType: T.Type
+    ) -> AnyPublisher<T, NetworkError> {
+        return networkService.requestPublisher(
+            endpoint: endpoint,
+            method: .get,
+            headers: headers,
+            body: nil,
+            queryParams: queryParams,
+            responseType: responseType
+        )
+    }
+
+    public func postPublisher<T: Decodable>(
+        endpoint: String,
+        body: Encodable,
+        headers: [String: String]? = nil ,
+        responseType: T.Type
+    ) -> AnyPublisher<T, NetworkError> {
+        let encoder = JSONEncoder()
+        encoder.keyEncodingStrategy = .convertToSnakeCase
+        guard let jsonData = try? encoder.encode(body) else {
+            return Fail(error: NetworkError.decodingError).eraseToAnyPublisher()
+        }
+        return networkService.requestPublisher(
+            endpoint: endpoint,
+            method: .post,
             headers: headers,
             body: jsonData,
             queryParams: nil,

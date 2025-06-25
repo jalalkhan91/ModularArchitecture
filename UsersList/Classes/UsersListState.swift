@@ -13,5 +13,5 @@ public final class UsersListState: ObservableObject {
     @Published public var isLoading: Bool = false
     @Published public var error: String?
     
-    public init() { }
+    public init() {}
 }

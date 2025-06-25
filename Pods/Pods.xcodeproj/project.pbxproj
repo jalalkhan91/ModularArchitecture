@@ -15,17 +15,17 @@
 		70AE6B57A8A7D80D0F3DEAB99A038146 /* Pods-ModularArchitectureTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8C1C67EEBD0EFE1D1EA11137C653D8 /* Pods-ModularArchitectureTests-dummy.m */; };
 		722ADB5CD54BB0C0562A20C1B543555D /* NetworkModule-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 976F8523644F7D8E4590E88A4863D215 /* NetworkModule-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7C5BA6EB389554457A207C56239A28D3 /* UsersList-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A520666E024A78D1AE4ADE80FF0ED08 /* UsersList-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F011EA54F5118DAA1B1EA8F0195108D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CF10DBFC34DC49CFABF93FDC3265CC /* User.swift */; };
 		9B203C88D82781D83A840F83B0CDA4A0 /* Pods-ModularArchitectureTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A2737F4D1A7B3B991DD429BA4AE16061 /* Pods-ModularArchitectureTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A68589A2481B9021C711D2AB21A5D940 /* Pods-ModularArchitecture-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 740D6B77B2030CEE510FA5E3DCDCFF1F /* Pods-ModularArchitecture-dummy.m */; };
 		AF9C0E911101F16C659ABB35FBB2ECBE /* Pods-ModularArchitecture-ModularArchitectureUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C937A7C2EE369D8F7830F7D40633FC1 /* Pods-ModularArchitecture-ModularArchitectureUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B20B66082E0C0A8A0049448C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20B66072E0C0A8A0049448C /* NetworkService.swift */; };
-		B20B66092E0C0A8A0049448C /* NetworkModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20B66062E0C0A8A0049448C /* NetworkModule.swift */; };
-		B20B660A2E0C0A8A0049448C /* DefaultNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20B66052E0C0A8A0049448C /* DefaultNetworkService.swift */; };
-		B20B660E2E0C0C310049448C /* UsersListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20B660C2E0C0C310049448C /* UsersListState.swift */; };
-		B20B660F2E0C0C310049448C /* UsersListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20B660B2E0C0C310049448C /* UsersListInteractor.swift */; };
-		B20B66102E0C0C310049448C /* UsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20B660D2E0C0C310049448C /* UsersListView.swift */; };
-		B25565872DD67B990087059A /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25565852DD67B990087059A /* Config.swift */; };
+		B20B661A2E0C13250049448C /* DefaultNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20B66162E0C13250049448C /* DefaultNetworkService.swift */; };
+		B20B661B2E0C13250049448C /* NetworkModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20B66172E0C13250049448C /* NetworkModule.swift */; };
+		B20B661C2E0C13250049448C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20B66132E0C13250049448C /* User.swift */; };
+		B20B661D2E0C13250049448C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20B66182E0C13250049448C /* NetworkService.swift */; };
+		B20B661E2E0C13250049448C /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20B66112E0C13250049448C /* Config.swift */; };
+		B20B66262E0C13E10049448C /* UsersListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20B66222E0C13E10049448C /* UsersListState.swift */; };
+		B20B66272E0C13E10049448C /* UsersListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20B66212E0C13E10049448C /* UsersListInteractor.swift */; };
+		B20B66282E0C13E10049448C /* UsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20B66232E0C13E10049448C /* UsersListView.swift */; };
 		B787B0BB4D74D1036BE11E726E5A17FE /* Pods-ModularArchitecture-ModularArchitectureUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E978B5BEB2E2E93FB98201BC2BFBF62D /* Pods-ModularArchitecture-ModularArchitectureUITests-dummy.m */; };
 		D54F417C693CEE20A30A7C2ABFBB25F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		E5664F9AEC872F7C4CA029C09AF2E4AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
@@ -87,7 +87,6 @@
 		1F6CBD4D12759CEBD7592E334BAFC2D5 /* Pods-ModularArchitecture.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ModularArchitecture.modulemap"; sourceTree = "<group>"; };
 		2A1B65ACFD16DE9329064224FD8A7D54 /* Pods-ModularArchitectureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ModularArchitectureTests.release.xcconfig"; sourceTree = "<group>"; };
 		2C9524FDEA8B3119CF52E0A732F084CB /* Pods-ModularArchitecture-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ModularArchitecture-Info.plist"; sourceTree = "<group>"; };
-		35CF10DBFC34DC49CFABF93FDC3265CC /* User.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		37836F561015201ACFA92FDDA5DB194D /* UsersList-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UsersList-prefix.pch"; sourceTree = "<group>"; };
 		49262B1EAF346CFA0C909D92806C64F7 /* NetworkModule.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NetworkModule.modulemap; sourceTree = "<group>"; };
 		4DC7C42DFB737ED804A139AD00B8F7AF /* Pods-ModularArchitectureTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ModularArchitectureTests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -110,13 +109,14 @@
 		9C8575F6A36A850BC861FDC419A76FEF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A2737F4D1A7B3B991DD429BA4AE16061 /* Pods-ModularArchitectureTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ModularArchitectureTests-umbrella.h"; sourceTree = "<group>"; };
-		B20B66052E0C0A8A0049448C /* DefaultNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNetworkService.swift; sourceTree = "<group>"; };
-		B20B66062E0C0A8A0049448C /* NetworkModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModule.swift; sourceTree = "<group>"; };
-		B20B66072E0C0A8A0049448C /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		B20B660B2E0C0C310049448C /* UsersListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListInteractor.swift; sourceTree = "<group>"; };
-		B20B660C2E0C0C310049448C /* UsersListState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListState.swift; sourceTree = "<group>"; };
-		B20B660D2E0C0C310049448C /* UsersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListView.swift; sourceTree = "<group>"; };
-		B25565852DD67B990087059A /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		B20B66112E0C13250049448C /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		B20B66132E0C13250049448C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B20B66162E0C13250049448C /* DefaultNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNetworkService.swift; sourceTree = "<group>"; };
+		B20B66172E0C13250049448C /* NetworkModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModule.swift; sourceTree = "<group>"; };
+		B20B66182E0C13250049448C /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		B20B66212E0C13E10049448C /* UsersListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListInteractor.swift; sourceTree = "<group>"; };
+		B20B66222E0C13E10049448C /* UsersListState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListState.swift; sourceTree = "<group>"; };
+		B20B66232E0C13E10049448C /* UsersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListView.swift; sourceTree = "<group>"; };
 		B4D64E3FB616104DD2CAED41E1031891 /* Pods-ModularArchitectureTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ModularArchitectureTests-Info.plist"; sourceTree = "<group>"; };
 		B4E28937E56581346C4C65C647816EF9 /* Pods-ModularArchitecture-ModularArchitectureUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ModularArchitecture-ModularArchitectureUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B87E3864012B37FF25EFF38D244D4164 /* Pods-ModularArchitectureTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ModularArchitectureTests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -292,11 +292,7 @@
 		6A0A0A7DD46C44922B97854B38DBA439 /* NetworkModule */ = {
 			isa = PBXGroup;
 			children = (
-				B20B66052E0C0A8A0049448C /* DefaultNetworkService.swift */,
-				B20B66062E0C0A8A0049448C /* NetworkModule.swift */,
-				B20B66072E0C0A8A0049448C /* NetworkService.swift */,
-				C2770D513B0EE3EBBB72A8BCDC819DB2 /* Models */,
-				B25565862DD67B990087059A /* Config */,
+				B20B66192E0C13250049448C /* Classes */,
 				65B399A902DADB1564D5388CC6398241 /* Pod */,
 				A7E48226EA00CFEE4E5AEBAC912A4B2B /* Support Files */,
 			);
@@ -307,9 +303,7 @@
 		889D6E36972267CDC4780C0905441F54 /* UsersList */ = {
 			isa = PBXGroup;
 			children = (
-				B20B660B2E0C0C310049448C /* UsersListInteractor.swift */,
-				B20B660C2E0C0C310049448C /* UsersListState.swift */,
-				B20B660D2E0C0C310049448C /* UsersListView.swift */,
+				B20B66242E0C13E10049448C /* Classes */,
 				DE3E500ED55294B34FB3655284940D19 /* Pod */,
 				1B8404C8D36BFB111C1BC5BAAED04995 /* Support Files */,
 			);
@@ -332,12 +326,42 @@
 			path = "../Pods/Target Support Files/NetworkModule";
 			sourceTree = "<group>";
 		};
-		B25565862DD67B990087059A /* Config */ = {
+		B20B66122E0C13250049448C /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				B25565852DD67B990087059A /* Config.swift */,
+				B20B66112E0C13250049448C /* Config.swift */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		B20B66142E0C13250049448C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B20B66132E0C13250049448C /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B20B66192E0C13250049448C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B20B66122E0C13250049448C /* Config */,
+				B20B66142E0C13250049448C /* Models */,
+				B20B66162E0C13250049448C /* DefaultNetworkService.swift */,
+				B20B66172E0C13250049448C /* NetworkModule.swift */,
+				B20B66182E0C13250049448C /* NetworkService.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B20B66242E0C13E10049448C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B20B66212E0C13E10049448C /* UsersListInteractor.swift */,
+				B20B66222E0C13E10049448C /* UsersListState.swift */,
+				B20B66232E0C13E10049448C /* UsersListView.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		B9D6DDDC9F64D2E250C40FC3BA894FC3 /* Targets Support Files */ = {
@@ -348,15 +372,6 @@
 				3AF0D0FF1C8CDCBEAE753F96C3D661E0 /* Pods-ModularArchitectureTests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		C2770D513B0EE3EBBB72A8BCDC819DB2 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				35CF10DBFC34DC49CFABF93FDC3265CC /* User.swift */,
-			);
-			name = Models;
-			path = NetworkModule/Classes/Models;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -610,11 +625,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				02570F39DF6FA74A15F477A76E36D082 /* NetworkModule-dummy.m in Sources */,
-				8F011EA54F5118DAA1B1EA8F0195108D /* User.swift in Sources */,
-				B20B66082E0C0A8A0049448C /* NetworkService.swift in Sources */,
-				B20B66092E0C0A8A0049448C /* NetworkModule.swift in Sources */,
-				B20B660A2E0C0A8A0049448C /* DefaultNetworkService.swift in Sources */,
-				B25565872DD67B990087059A /* Config.swift in Sources */,
+				B20B661A2E0C13250049448C /* DefaultNetworkService.swift in Sources */,
+				B20B661B2E0C13250049448C /* NetworkModule.swift in Sources */,
+				B20B661C2E0C13250049448C /* User.swift in Sources */,
+				B20B661D2E0C13250049448C /* NetworkService.swift in Sources */,
+				B20B661E2E0C13250049448C /* Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -638,9 +653,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B20B660E2E0C0C310049448C /* UsersListState.swift in Sources */,
-				B20B660F2E0C0C310049448C /* UsersListInteractor.swift in Sources */,
-				B20B66102E0C0C310049448C /* UsersListView.swift in Sources */,
+				B20B66262E0C13E10049448C /* UsersListState.swift in Sources */,
+				B20B66272E0C13E10049448C /* UsersListInteractor.swift in Sources */,
+				B20B66282E0C13E10049448C /* UsersListView.swift in Sources */,
 				1D516C3E1EA24927E2A02B41667E8518 /* UsersList-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
