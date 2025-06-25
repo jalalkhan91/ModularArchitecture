@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Combine
 
 public protocol NetworkService {
     func request<T: Decodable>(
@@ -17,15 +16,6 @@ public protocol NetworkService {
         queryParams: [String:String]?,
         responseType: T.Type
     ) async throws -> T
-    
-    func requestPublisher<T: Decodable>(
-        endpoint: String,
-        method: HTTPMethod,
-        headers: [String: String]?,
-        body: Data?,
-        queryParams: [String:String]?,
-        responseType: T.Type
-    ) -> AnyPublisher<T, NetworkError>
 }
 
 public enum HTTPMethod: String {
